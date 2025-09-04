@@ -1,8 +1,8 @@
 version: "3.8"
 services:
   comfyui:
-    image: ghcr.io/FreesoSaiFared/ComfyUI-Docked:cu126-slim
-    build: .
+    image: ghcr.io/freesosaifared/comfyui-docked:cu126-slim
+    
     container_name: comfyui_rtx3060
     ports:
       - "8188:8188"

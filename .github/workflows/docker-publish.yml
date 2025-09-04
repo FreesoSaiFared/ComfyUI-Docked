@@ -24,4 +24,4 @@ jobs:
         with:
           context: ./cu126-slim
           push: true
-          tags: ghcr.io/FreesoSaiFared/ComfyUI-Docked:cu126-slim,ghcr.io/FreesoSaiFared/ComfyUI-Docked:latest
+          tags: ghcr.io/freesosaifared/comfyui-docked:cu126-slim,ghcr.io/freesosaifared/comfyui-docked:latest
