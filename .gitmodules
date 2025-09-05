@@ -25,9 +25,7 @@
 [submodule "custom-nodes/comfyui_controlnet_aux"]
 	path = custom-nodes/comfyui_controlnet_aux
 	url = https://github.com/Fannovel16/comfyui_controlnet_aux.git
-[submodule "custom-nodes/ComfyUI-Advanced-ControlNet"]
-	path = custom-nodes/ComfyUI-Advanced-ControlNet
-	url = https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet.git
+
 [submodule "custom-nodes/ComfyUI-Lora-Manager"]
 	path = custom-nodes/ComfyUI-Lora-Manager
 	url = https://github.com/willmiao/ComfyUI-Lora-Manager.git
