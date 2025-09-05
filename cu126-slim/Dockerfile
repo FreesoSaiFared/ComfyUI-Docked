@@ -129,8 +129,8 @@ RUN --mount=type=cache,target=/root/.cache/pip \
     && pip install \
         --dry-run xformers torchvision torchaudio \
         --index-url https://download.pytorch.org/whl/cu126 \
-            | grep -oP '(?<=Would install ).*' > /tmp/packages.txt \
-    && grep -oP 'nvidia-\S+-\S+' /tmp/packages.txt \
+            | grep -oP "(?<=Would install ).*" > /tmp/packages.txt \
+    && grep -oP "nvidia-\S+-\S+" /tmp/packages.txt \
         | sed 's/\(.*\)-\([^-]*\)$/\1==\2/' > /tmp/packages-nvidia.txt \
     && echo "========== NVIDIA Packages ==========" \
     && cat /tmp/packages-nvidia.txt \
@@ -209,7 +209,7 @@ ENV LD_LIBRARY_PATH="/usr/local/lib64/python3.12/site-packages/torch/lib\
 :/usr/local/lib/python3.12/site-packages/nvidia/nvjitlink/lib\
 :/usr/local/lib/python3.12/site-packages/nvidia/nvshmem/lib\
 :/usr/local/lib/python3.12/site-packages/nvidia/nvtx/lib\
-${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+${LD_LIBRARY_PATH+::${LD_LIBRARY_PATH}}"
 
 # Deps for ComfyUI & custom nodes
 COPY builder-scripts/.  /builder-scripts/
@@ -252,5 +252,5 @@ USER root
 VOLUME /root
 WORKDIR /root
 EXPOSE 8188
-ENV CLI_ARGS=""
+ENV CLI_ARGS="--enable-sageattention --enable-triton --medvram --no-half-vae"
 CMD ["bash","/runner-scripts/entrypoint.sh"]

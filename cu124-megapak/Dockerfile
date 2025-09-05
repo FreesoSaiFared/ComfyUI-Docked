@@ -199,15 +199,18 @@ COPY builder-scripts/.  /builder-scripts/
 # Deps for ComfyUI & custom nodes
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip install \
-        -r /builder-scripts/pak3.txt
+        -r /builder-scripts/pak3.txt \
+    && rm -rf /root/.cache/pip
 
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip install \
-        -r /builder-scripts/pak5.txt
+        -r /builder-scripts/pak5.txt \
+    && rm -rf /root/.cache/pip
 
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip install \
-        -r /builder-scripts/pak7.txt
+        -r /builder-scripts/pak7.txt \
+    && rm -rf /root/.cache/pip
 
 # Make sure the deps fit the needs for ComfyUI & Manager
 RUN --mount=type=cache,target=/root/.cache/pip \

@@ -1,0 +1,34 @@
+[submodule "custom-nodes/ComfyUI-GGUF"]
+	path = custom-nodes/ComfyUI-GGUF
+	url = https://github.com/city96/ComfyUI-GGUF.git
+[submodule "custom-nodes/nunchaku"]
+	path = custom-nodes/nunchaku
+	url = https://github.com/mit-han-lab/nunchaku.git
+[submodule "custom-nodes/ComfyUI-WanVideoWrapper"]
+	path = custom-nodes/ComfyUI-WanVideoWrapper
+	url = https://github.com/kijai/ComfyUI-WanVideoWrapper.git
+[submodule "custom-nodes/top-100-comfyui"]
+	path = custom-nodes/top-100-comfyui
+	url = https://github.com/liusida/top-100-comfyui.git
+[submodule "custom-nodes/x-flux-comfyui"]
+	path = custom-nodes/x-flux-comfyui
+	url = https://github.com/XLabs-AI/x-flux-comfyui.git
+[submodule "custom-nodes/ComfyUI-Custom-Scripts"]
+	path = custom-nodes/ComfyUI-Custom-Scripts
+	url = https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git
+[submodule "custom-nodes/ComfyUI-LTXVideo"]
+	path = custom-nodes/ComfyUI-LTXVideo
+	url = https://github.com/Lightricks/ComfyUI-LTXVideo.git
+[submodule "custom-nodes/ComfyUI-HunyuanVideoWrapper"]
+	path = custom-nodes/ComfyUI-HunyuanVideoWrapper
+	url = https://github.com/kijai/ComfyUI-HunyuanVideoWrapper.git
+[submodule "custom-nodes/comfyui_controlnet_aux"]
+	path = custom-nodes/comfyui_controlnet_aux
+	url = https://github.com/Fannovel16/comfyui_controlnet_aux.git
+
+[submodule "custom-nodes/ComfyUI-Lora-Manager"]
+	path = custom-nodes/ComfyUI-Lora-Manager
+	url = https://github.com/willmiao/ComfyUI-Lora-Manager.git
+[submodule "custom-nodes/ComfyUI-Manager"]
+	path = custom-nodes/ComfyUI-Manager
+	url = https://github.com/ltdrdata/ComfyUI-Manager.git
